@@ -1,0 +1,129 @@
+body{
+  margin:0;
+}
+div.nav_bar{
+z-index: 11111;
+  border: none;
+  position: fixed;
+  margin:0;
+  background-color:#262626;
+  width: 100%;
+}
+div.nav_elements li{
+  margin:0;
+    //padding: 14px 16px;
+    display: block;
+    background-color:#262626;
+    color:white;
+    float: left;
+
+}
+div.dropdown:hover {
+  margin:0;
+  position: absolute;
+  //padding: 14px 16px;
+  list-style: none;
+  z-index:1;
+  display: block;
+}
+div.dropdown_content {
+  background-color:black;
+  z-index:1;
+  display:none;
+}
+div.dropdown:hover  div.dropdown_content{
+    display: block;
+}
+.drp_btn{
+  font-family: inherit;
+  font-size: 100%;
+  text-align: center;
+  border: none;
+  display: block;
+  color: white;
+  margin: none;
+  padding: 14px 16px;
+  background-color:#229333;
+}
+.drp_btn:hover{
+  border: none;
+  display: block;
+  color: black;
+
+  margin: 0;
+  padding: 14px 16px;
+  background-color: yellow;
+}
+div.nav_elements a{
+  margin: none;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+div.nav_elements a:active,a:hover{
+  margin: none;
+  color:white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: green;
+}
+div.register_section{
+  position: absolute;
+  right: 0px;
+}
+div.register_section li{
+  position:absolute;
+  right: 0px;
+  margin:0;
+    //padding: 14px 16px;
+    display: block;
+    background-color:#262626;
+    color:white;
+    float: left;
+}
+div.register_section a{
+  position: absolute;
+  right: 0px;
+  margin: none;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+div.register_section a:active,a:hover{
+  margin: none;
+  color:white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: green;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+div.main{
+  align-items: center;
+/* padding-top: 30px;
+  padding-bottom:30px;
+  padding-left:5px;
+  padding-right: 5px;
+*/  position: absolute;
+  left: 400px;
+  top: 200px;
+}
+
+div.main li{
+  align-items: center;
+left: 0px;
+float: left;
+display: block;
+}
+div.main input{
+  left: 0px;
+  width: 200px;
+  height: 50px;
+  margin: 0px;
+}
