@@ -1,0 +1,29 @@
+insert into europe values (20152,"British Airways","Mumbai","London",'21:55','7:30',11,10);
+insert into europe values (26112,"Air France","new Delhi","Paris",'3:55','10:45',7,10);
+insert into europe values (5576,"Lufthansa","New Delhi","Armsterdam",'2:50','10:20',8,10);
+insert into europe values (85064,"Etihad","Mumbai","Frankfurt",'21:35','6:45',9,10);
+insert into europe values (50737,"Emirates","Mumbai","Madrid",'10:10','20:20',10,10);
+insert into europe values (15871,"Air India","Pune","Dublin",'18:50','10:40',8,10);
+insert into europe values (82171,"Turkish Airlines","Ahemedabad","Lisbon",'1:55','15:30',14,10);
+insert into europe values (9945,"Lufthansa","Banglore","Linz",'3:05','17:30',14,10);
+insert into europe values (44846,"Cathay Pacific","Mumbai","Brussels",'1:10','9:20',9,10);
+insert into europe values (56698 ,"Qatar Airways","Mumbai","Athenes",'4:10','15:30',11,10);
+insert into europe values (98771,"Aeroflot","New Delhi","Milan",'6:55','17:30',11,10);
+insert into europe values (54489,"Swiss Air","Mumbai","Geneva",'0:55','8:30',8,10);
+
+
+insert into middle_east values (74280,"Etihad","New Delhi","Larnaca",'9:00','12:45',03,45);
+insert into middle_east values (13485,"Gulf Air","Cochin","Muscat",'5:00','6:50',1,50);
+insert into middle_east values (23489,"Emirates","Mumbai","Abu Dhabi",'15:55','17:30',2,25);
+insert into middle_east values (54369,"Emirates","Pune","Dubai",'20:00','22:00',2,00);
+insert into middle_east values (14189,"Turkish Airline","Mumbai","Istanbul",'5:05','14:45',9,40);
+insert into middle_east values (54219,"Qatar Airways","Mumbai","Doha",'6:55','7:55',1,00);
+insert into middle_east values (94480,"Turkish Airline","Mumbai","Al Madinah",'10:10','3:30',4,20);
+
+insert into south_east_asia values (74280,"Vistara","New Delhi","Myitktina",'23:00','10:25',11,25);
+insert into south_east_asia values (63485,"Spicejet","Cochin","Bankok",'5:00','6:50',1,50);
+insert into south_east_asia values (33419,"Indigo","Mumbai","Hanoi",'7:35','19:10',12,25);
+insert into south_east_asia values (34469,"Emirates","New Delhi","Kuala Lumpur",'6:20','14:15',8,05);
+insert into south_east_asia values (94089,"Singapore Airline","New Delhi","Singapore",'18:25','1:45',06,30);
+insert into south_east_asia values (92619,"Thai Lion Air","Mumbai","Jakarta",'19:00','12:30',6,30);
+insert into south_east_asia values (14489,"Air India","Mumbai","Doha",'6:55','7:55',01,00);
