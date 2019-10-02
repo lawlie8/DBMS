@@ -19,6 +19,8 @@ insert into middle_east values (54369,"Emirates","Pune","Dubai",'20:00','22:00',
 insert into middle_east values (14189,"Turkish Airline","Mumbai","Istanbul",'5:05','14:45',9,40);
 insert into middle_east values (54219,"Qatar Airways","Mumbai","Doha",'6:55','7:55',1,00);
 insert into middle_east values (94480,"Turkish Airline","Mumbai","Al Madinah",'10:10','3:30',4,20);
+insert into middle_east values (97470,"kuwait Airline","Mumbai","Kuwait City",'10:10','3:30',4,20);
+
 
 insert into south_east_asia values (74280,"Vistara","New Delhi","Myitktina",'23:00','10:25',11,25);
 insert into south_east_asia values (63485,"Spicejet","Cochin","Bankok",'5:00','6:50',1,50);

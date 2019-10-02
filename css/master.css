@@ -627,6 +627,18 @@ div.flights_list li {
   padding-bottom: 15px;
   border-bottom: 1px solid black;
 }
+
+#fl {
+  top: 50px;
+  display: block;
+  position: relative;
+  align-items: center;
+  background-color:white;
+  padding-left: 50px;
+  padding-top:15px;
+  padding-bottom: 50px;
+//  border-bottom: 1px solid black;
+}
 div.flights_list td{
 
   float: left;
@@ -637,7 +649,10 @@ div.flights_list td{
   padding-bottom: 10px;
   padding-left: 10px;
   align-items: center;
+
 }
+
+
 div.left_countries_container a {
   text-decoration: none;
   color: inherit;
