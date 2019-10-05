@@ -1,4 +1,4 @@
-<?php require 'init.php'  ?>
+<?php require 'init.php' ; require 'signin.php' ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" onload="document.body.style.zoom = 1.0">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -26,10 +26,18 @@
 </div>
 </li>
 
+<li id='login_variable'><?php if (@$_SESSION['active'] == true){ echo ( "<a href=user.php>". $_SESSION['email'] ."</a>");}else {
+  echo("<a href=logup.php>login</a>");
+} ?></li>
+
+
+
+<!--
 <div class="register_section">
-  <li><a href="login.php">Login/Signup</a></li>
+  <li><a href="logup.php">Login/Signup</a></li>
 
 </div>
+-->
 </div>
 
 </div>

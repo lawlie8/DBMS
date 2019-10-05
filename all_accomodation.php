@@ -1,6 +1,6 @@
 <?php require 'init.php'; require 'signin.php'; ?>
 <!DOCTYPE html>
-<html style="background-color:#001b42" lang="en" dir="ltr" onload="document.body.style.zoom = 1.0">
+<html lang="en" dir="ltr" onload="document.body.style.zoom = 1.0">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="stylesheet" href="css/master.css">
   <head>
@@ -29,34 +29,16 @@
 <li id='login_variable'><?php if (@$_SESSION['active'] == true){ echo ( "<a href=user.php>". $_SESSION['email'] ."</a>");}else {
   echo("<a href=logup.php>login</a>");
 } ?></li>
+
+</div>
 </div>
 
 </div>
-<div class="thanks_for_subscribing">
-<h1>You have subscribed to sangreal Secret Deals</h1>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<div class="all_accomodation_main_offers">
+<h1>hello cunts</h1>
+
 
 </div>
-
-<?php
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'sangreal';
-$conn = new mysqli($server,$username,$password,$dbname);
-@$email = $conn->escape_string($_POST['email_subscribe']);
-echo $email;
-$sql = "INSERT INTO email_subscribe (email)". "VALUES('$email')";
-$conn->query($sql);
- ?>
- <script >
- function doStuff()
- {
-   setTimeout(continueExecution, 3000) //wait three seconds before continuing
- }
-function continueExecution()
- {
-   window.location.replace('index.php');
- }
-
-doStuff()
-</script>
