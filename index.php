@@ -56,7 +56,7 @@
 <div class="main_deals1_">
 
 
-  <h3>Off Peak Deals</h3>
+<a href="off_peak_deals.php"><h3>Off Peak Deals</h3></a>
 <p>Summer vacation is over, but not for you. Get 20% off stays September to October.</p>
 </div>
 </div>

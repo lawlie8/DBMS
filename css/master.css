@@ -715,3 +715,203 @@ div.left_countries_container li:hover {
 background-color: #0073e6;
 }
 */
+
+div.off_peak_top_container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 30px;
+  height: 300px;
+  width: 100%;
+  color: white;
+  background-color: #001b42;
+}
+
+div.off_peak_top_container li {
+  float: left;
+  display: block;
+}
+div.off_peak_top_container p {
+  position: relative;
+  display: block;
+  top: 170px;
+  left: -130px;
+}
+
+div.off_peak_top_container h1 {
+  float: left;
+  display: block;
+  position: relative;
+  top: 70px;
+  left: 100px;
+}
+
+
+div.off_peak_top_container img {
+  padding-top: 50px;
+  left: 80%;
+  position: absolute;
+  height: 200px;
+  display: block;
+}
+
+div.off_peak_deals_deals_list{
+  position: absolute;
+  top:350px;
+  left: 100px;
+}
+
+
+div.off_peak_deals_deals_list li {
+display: block;
+float: left;
+transition: 0.5s  ease all;
+padding-left: 20px;
+}
+
+div.off_peak_deals_deals_list li:hover {
+transition: 0.5s  ease all;
+background-color:white;
+}
+
+div.off_peak_deals_deals_list a {
+display: block;
+text-decoration: none;
+transition: 0.5s  ease all;
+color: #001b42;
+}
+div.off_peak_deals_deals_list a:hover {
+display: block;
+transition: 0.5s  ease all;
+background-color:white;
+text-decoration: none;
+color: #001b42;
+}
+div.off_peak_deals_deals_list img {
+transition: 0.5s  ease all;
+height: 200px;
+width: 300px;
+}
+div.off_peak_deals_deals_list img:hover{
+background-color:white;
+transition: 0.5s  ease all;
+height: 200px;
+width: 300px;
+}
+
+div.bangkok_first_1{
+  position: absolute;
+  top: 35px;
+  left:0px;
+  width: 100%;
+  height: 270px;
+  color: white;
+  background:#001b42;
+
+}
+div.bangkok_first_1 h1{
+  position: relative;
+  top: 10px;
+  left: 20px;
+
+}
+
+div.bangkok_first_1 h2{
+  position: relative;
+  top: 10px;
+  left: 20px;
+
+}
+div.bangkok_first_1 li{
+  position: relative;
+  display: block;
+}
+div.bangkok_first_1 img{
+height: 200px;
+left: 1050px;
+top: 25px;
+position: absolute;
+}
+
+div.bangkok_into1{
+  left: 100px;
+  position: absolute;
+  top: 320px;
+}
+
+div.bangkok_into1 p {
+padding-bottom: 5px;
+color: gray;
+
+}
+
+div.bangkok_into1 img {
+width: 500px;
+height: 300px;
+padding-bottom: 20px;
+}
+
+#bangkok_into_p1{
+  position: absolute;
+  right: 100px;
+  top: 200px;
+  left: 550px;
+  color: #001b42;
+}
+
+div.bangkok_into2{
+  left: 100px;
+  position: absolute;
+  top: 820px;
+}
+div.bangkok_into2 img {
+width: 500px;
+height: 300px;
+padding-bottom: 20px;
+}
+div.bangkok_into2 p {
+padding-bottom: 5px;
+color: gray;
+
+}
+
+#bangkok_into_p2{
+  position: absolute;
+  right: 100px;
+  top: 600px;
+  left: 550px;
+  color: #001b42;
+}
+
+div.bangkok_what_we_cover{
+  position: absolute;
+  top: 1300px;
+  left: 100px;
+  padding-bottom: 100px;
+}
+
+div.bangkok_what_we_cover li{
+  display: block;
+}
+
+div.bangkok_what_we_cover button{
+  background-color:#001b42;
+  color: white;
+  border: none;
+  display: block;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+transition: 0.5s ease all;
+}
+
+div.bangkok_what_we_cover button:hover{
+  background-color:#001b42;
+  transition: 0.5s ease all;
+  color: white;
+  border: none;
+  display: block;
+  height: 42px;
+  width: 110px;
+  align-items: center;
+}

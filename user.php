@@ -46,7 +46,8 @@
 
 <div class="left_countries_container">
   <li onclick=show_user_profile()>User Profile</li>
-  <li onclick=show_user_bookings()>My Bookings</li>
+  <li onclick=show_user_bookings()>My Flights</li>
+  <li onclick="show_user_deal_bookings()">My Bookings</li>
   <li onclick="logout()">Log Out</li>
 </div>
 
@@ -105,8 +106,8 @@ function logout() {
 }
 </script>
 <div id=fl class="flights_list" style="">
-  <h1>Search Hundreds of Flights at Once</h1>
-  <h3>Different Continent? Why The Same Flight?</h3>
+  <h1>This Is Your Profile Page</h1>
+  <h3>Check Your Booking, Flights, and many things more.</h3>
   <img style=" border-bottom:20px solid black; padding-right:900px ;height:200px ;left:100px; z-index: 1111" src="images/flights.png" alt="">
 
 </div>
