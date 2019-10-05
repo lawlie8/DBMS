@@ -659,3 +659,13 @@ div.left_countries_container a {
   decoration:none;
   display: block;
 }
+
+div.thanks_for_subscribing{
+  font-family: sans-serif;
+  color: white;
+  background-color: #001b42;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

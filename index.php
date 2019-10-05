@@ -63,11 +63,14 @@
 <li><h1>UAE</h1><p>5 Packages</p> <img src="images/UAE.png" alt=""> </li>
 <li><h1>Australia</h1><p>2 Packages</p><img src="images/Australia.png" alt=""> </li>
 </div>
+<form class="" action="email_subscribe.php" method="post">
+
+
 <div class="email_subscribe">
 <li><h2>Subscribe</h2> </li>
-<li> <input type="email" name=""  placeholder="                      Subscribe for Secret Deals" value=""></li>
-<li><button type="button" name="button">Subscribe</button> </li>
-
+<li> <input type="email" name="email_subscribe"  placeholder="                      Subscribe for Secret Deals" value=""></li>
+<li><button type="button" action='email_subscribe.php' ame="button">Subscribe</button> </li>
+</form>
 </div>
 <div class="end_credits">
 <li>US</li>
@@ -77,3 +80,16 @@
 <li>Australia</li>
 <li>United Kingdom</li>
 </div>
+
+
+<?php
+$server = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'sangreal';
+$conn = new mysqli($server,$username,$password,$dbname);
+@$email = $conn->escape_string($_POST['email_subscribe']);
+echo $email;
+//$conn->query("insert into email_subscribe values($email)");
+
+ ?>
