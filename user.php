@@ -59,7 +59,7 @@ function show_user_profile(){
     <?php
     $just = 0;
     $s = $_SESSION['email'];
-    $sql = "select Name,email,password,phone_no from login_table where email='$s'";
+    $sql = "select Name,email,password,phone_no from login_table where email='$s' and hash is not NULL";
       $us_result = $conn->query($sql);
       echo '<li><table><tr><td>Name</td><td>Phone No</td><td>Email</td><td>Password</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
@@ -82,13 +82,14 @@ function show_user_profile(){
       <?php
       $just = 0;
       $s = $_SESSION['email'];
-      $sql = "select flight_id,flight_name,from_airport,to_airport,departure,arrival,duration,date from login_table where email='$s'";
+      $sql = "select flight_id,flight_name,from_airport,to_airport,departure,arrival,duration,date from login_table where email='$s' and password is  NULL";
         $us_result = $conn->query($sql);
-        echo '<li><table><tr><td>Flight id</td><td>Flight Name</td><td>To</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Date</td><tr></table></li> ';
+        echo '<li><table><tr><td>Flight id</td><td>Flight Name</td><td>To</td><td>From</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Date</td><tr></table></li> ';
     while($us_array = $us_result->fetch_assoc()){
+      $hotelfunction = $us_array['to_airport'];
+      $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-
-    echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'].'</td><td>'.$us_array['date'].'</td></li>';
+    echo '<li><table><tr><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'].'</td><td>'.$us_array['date'].'</td><td><button onclick=flight_cancel'.$hotelfunction.'()>Cancel</button></tr></li>';
     }
 
 
@@ -99,15 +100,196 @@ function show_user_profile(){
       `
       document.getElementById('fl').innerHTML = flights_europe_data_country;
     }
+function show_user_deal_bookings(){
+  var flights_europe_data_country = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "select to_airport,hotel,room_no,date from login_table where email='$s' and password is  NULL";
+      $us_result = $conn->query($sql);
+      echo '<li><table><tr><td>To</td><td>Hotel Name</td><td>Room no</td><td>Date</td><tr></table></li> ';
+  while($us_array = $us_result->fetch_assoc()){
+    $just = $just +1;
+    $hotelfunction = $us_array['hotel'];
+    $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+  echo '<li><table><tr><td>'.$us_array['to_airport'].'</td><td id=td'.$just.' >'.$us_array['hotel'] .'</td><td>'.$us_array['room_no'].'</td><td>'.$us_array['date'].'</td><td><button onclick=cancel_booking'.$hotelfunction.'()>Cancel</button></tr></li>';
+  }
+
+
+
+     ?>
+
+
+    `
+    document.getElementById('fl').innerHTML = flights_europe_data_country;
+  }
 
 
 function logout() {
   window.location.replace('logout.php');
 }
 </script>
-<div id=fl class="flights_list" style="">
+<div id=fl class="flights_list_user" style="">
   <h1>This Is Your Profile Page</h1>
   <h3>Check Your Booking, Flights, and many things more.</h3>
   <img style=" border-bottom:20px solid black; padding-right:900px ;height:200px ;left:100px; z-index: 1111" src="images/flights.png" alt="">
 
 </div>
+
+
+
+<script type="text/javascript">
+function cancel_bookingMoscow(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and to_airport='Moscow'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+
+function cancel_bookingFloridaMiami(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and to_airport='Florida Miami'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+
+function cancel_bookingTokyo(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and to_airport='Tokyo'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+
+
+
+function cancel_bookingBankok(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and to_airport='Bankok'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+function cancel_bookingVilla25HotelSuit(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and hotel='Villa 25 Hotel Suit'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+
+
+function cancel_bookingIpanemaBeachHotel(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and hotel='Ipanema Beach Hotel'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+function cancel_bookingKnickerBockerHotel(){
+  var x = `
+    <?php
+    $just = 0;
+    $s = $_SESSION['email'];
+    $sql = "delete from login_table where email='$s' and hotel='Knicker Bocker Hotel'";
+    echo $sql;
+      $us_result = $conn->query($sql);
+      $us_array = $us_result->fetch_assoc();
+     ?>
+  `
+  document.getElementById("fl").innerHTML = x
+  window.location.reload()
+
+
+}
+
+
+
+  function cancel_bookingEquinoxHotel(){
+    var x = `
+      <?php
+      $just = 0;
+      $s = $_SESSION['email'];
+      $sql = "delete from login_table where email='$s' and hotel='Equinox Hotel'";
+      echo $sql;
+        $us_result = $conn->query($sql);
+        $us_array = $us_result->fetch_assoc();
+       ?>
+    `
+    document.getElementById("fl").innerHTML = x
+    window.location.reload()
+
+
+}
+
+
+
+
+
+
+
+
+
+</script>

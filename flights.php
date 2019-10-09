@@ -102,9 +102,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Doha"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -124,9 +125,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Jakarta"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -146,9 +148,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Singapore"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -168,9 +171,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Kuala Lumpur"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -190,9 +194,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Hanoi"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -212,9 +217,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Bankok"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -234,9 +240,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from south_east_asia where to_airport="Myitktina"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -257,9 +264,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Maarrakesh"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -279,9 +287,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Mahe Island"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -301,9 +310,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Lagos"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -323,9 +333,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Mauritius"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -345,9 +356,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Nairobi"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -367,9 +379,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Addis Ababa"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -389,9 +402,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Luxor"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -411,9 +425,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from africa where to_airport="Cape Town"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -434,9 +449,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Al Madinah"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -456,9 +472,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Doha"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -478,9 +495,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Kuwait City"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -500,9 +518,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Istanbul"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -522,9 +541,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Abu Dhabi"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -544,9 +564,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Muscat"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -566,9 +587,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from middle_east where to_airport="Larnaca"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -588,9 +610,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe where to_airport="Paris"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -608,9 +631,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="London"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -629,9 +653,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Madrid"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -649,9 +674,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Dublin"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -669,9 +695,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Geneva"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -691,9 +718,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Milan"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -712,9 +740,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Athenes"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -734,9 +763,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Brussels"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -756,9 +786,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Linz"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -778,9 +809,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Lisbon"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -800,9 +832,10 @@ var flights_europe_data_country = `
     $us_result = $conn->query('select * from europe WHERE to_airport="Frankfurt"');
     echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
 while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -822,9 +855,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from europe WHERE to_airport="Armsterdam"');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -848,9 +882,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from us');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -869,9 +904,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from australia');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -893,9 +929,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from africa');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -914,9 +951,10 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
         $us_result = $conn->query('select * from south_east_asia');
         echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
     while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-    echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+    echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
     }
 
 
@@ -938,9 +976,11 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
       $us_result = $conn->query('select * from middle_east');
       echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
-
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' type="checkbox"></td></tr></table></li>';
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+  $hotelfunction = $us_array['flight_id'];
+  $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -962,9 +1002,11 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
         $us_result = $conn->query('select * from europe');
         echo '<li><table><tr><td>flight id</td><td>Flight Name</td><td>From</td><td>To</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Seats</td><tr></table></li> ';
     while($us_array = $us_result->fetch_assoc()){
-  $just = $just + 1;
-
-    echo '<li><table><td id=flight_id'.$just.'> '.$us_array['flight_id'].'</td><td id=flight_name'.$just.'>'.$us_array['flight_name']. '</td><td id=flight_from_airport'.$just.'>'.$us_array['from_airport'] .'</td><td id=flight_to_airport'.$just.'>'.$us_array['to_airport'].'</td><td id=flight_departure'.$just.'>'.$us_array['departure'].'</td><td id=flight_arrival'.$just.'>'.$us_array['arrival'].'</td><td id=flight_duration'.$just.'>'.$us_array['duration'] .'hrs</td> <td id=flight_seats'.$just.'>'.$us_array['seats'] .'</td><td><input name=selectflight'.$just.' onfocus=book_flight'.$just.'(flight_id1) type="checkbox"></td></tr></table></li>';
+  $hotelfunction = $us_array['flight_id'];
+$hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+  $hotelfunction = $us_array['flight_id'];
+  $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+    echo '<li><table><td id=flight_id'.$just.'> '.$us_array['flight_id'].'</td><td id=flight_name'.$just.'>'.$us_array['flight_name']. '</td><td id=flight_from_airport'.$just.'>'.$us_array['from_airport'] .'</td><td id=flight_to_airport'.$just.'>'.$us_array['to_airport'].'</td><td id=flight_departure'.$just.'>'.$us_array['departure'].'</td><td id=flight_arrival'.$just.'>'.$us_array['arrival'].'</td><td id=flight_duration'.$just.'>'.$us_array['duration'] .'hrs</td> <td id=flight_seats'.$just.'>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
     }
 
 
@@ -977,10 +1019,9 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
   europe()
   }
 
-  function book_flight1(){
-  //  alert(document.getElementById('flight_id1').innerHTML)
-  //  alert(document.getElementById('flight_name1').innerHTML)
-  }
+
+
+
   function book_flight2(){
     //alert(document.getElementById('flight_id2').innerHTML)
 }

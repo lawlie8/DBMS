@@ -61,15 +61,15 @@
 </div>
 </div>
 <div class="main_deals2">
-<li><h1>New York</h1><img src="images/new_york.png" alt=""></li>
-<li><h1>Rio De Janerio</h1><img src="images/rio_beach.png" alt=""> </li>
+<li><a href="newyork.php"> <h1>New York</h1><img src="images/new_york.png" alt=""></a></li>
+<li><a href="rio.php"> <h1>Rio De Janerio</h1><img src="images/rio_beach.png" alt=""> </a></li>
 
 </div>
 
 <div class="main_deals3">
-<li><h1>UK</h1><p>3 Packages</p> <img src="images/UK.png" alt=""> </li>
-<li><h1>UAE</h1><p>5 Packages</p> <img src="images/UAE.png" alt=""> </li>
-<li><h1>Australia</h1><p>2 Packages</p><img src="images/Australia.png" alt=""> </li>
+<li><a href="#"><h1>UK</h1><p>3 Packages</p> <img src="images/UK.png" alt=""></a>  </li>
+<li><a href="#"><h1>UAE</h1><p>5 Packages</p> <img src="images/UAE.png" alt=""></a>  </li>
+<li><a href="#"> <h1>Australia</h1><p>2 Packages</p><img src="images/Australia.png" alt=""> </a></li>
 </div>
 <form class="" action="email_subscribe.php" method="post">
 

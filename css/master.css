@@ -74,7 +74,7 @@ div.nav_elements a:active,a:hover{
   margin: none;
   color:white;
   display: block;
-  padding: 14px 16px;
+
   text-decoration: none;
   background-color: green;
 }
@@ -106,7 +106,7 @@ div.register_section a:active,a:hover{
   margin: none;
   color:white;
   display: block;
-  padding: 14px 16px;
+
   text-decoration: none;
   background-color: green;
 }
@@ -205,6 +205,21 @@ div.main_deals2{
   top: 650px;
   left: 100px;
 }
+div.main_deals2 a{
+  transition: 0.5s all ease;
+    padding: none;
+    margin: 0px 0px;
+
+}
+
+div.main_deals2 a:hover{
+  display: block;
+  background-color:white;
+  padding: none;
+  margin: 0px 0px;
+
+}
+
 div.main_deals2 li{
   padding: 14px 16px;
   float: left;
@@ -236,9 +251,25 @@ div.main_deals2 h1{
 
 div.main_deals3{
   position: absolute;
-  top: 1000px;
+ top: 1000px;
   left: 100px;
+
 }
+div.main_deals3 a{
+margin-top: auto;
+display: block;;
+text-decoration: none;
+}
+
+div.main_deals3 a:hover{
+  background-color: white;
+  text-decoration: none;
+  margin:auto;
+  height: 0px;
+  padding-top:0px;
+}
+
+
 div.main_deals3 li{
   padding: 14px 16px;
   float: left;
@@ -616,6 +647,46 @@ div.flights_list{
   background-color:;
 
 }
+div.flights_list_user{
+  overflow-y: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 25px;
+  right: 00px;
+  left:190px;
+  padding-top: 20px;
+  padding-left: 30px;
+  background-color:;
+
+}
+div.flights_list_user li {
+  display: block;
+  position: relative;
+  align-items: center;
+  background-color:white;
+  padding-top:15px;
+  padding-bottom: 15px;
+
+}
+#date_input{
+  height: 30px;
+  padding-bottom: 0px;
+}
+
+div.flights_list_user td{
+  position: relative;
+  float: left;
+  width: 120px;
+  //border: 1px solid black;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  align-items: center;
+
+}
+
+
 div.flights_list li {
   top: 50px;
   display: block;
@@ -640,7 +711,7 @@ div.flights_list li {
 //  border-bottom: 1px solid black;
 }
 div.flights_list td{
-
+position: relative;
   float: left;
   width: 120px;
   //border: 0px solid black;
@@ -914,4 +985,21 @@ div.bangkok_what_we_cover button:hover{
   height: 42px;
   width: 110px;
   align-items: center;
+}
+
+div.bangkok_what_we_cover a {
+  display: block;
+
+  text-decoration: none;
+  color: white;
+}
+
+div.bangkok_what_we_cover a:hover {
+  display: block;
+  background-color: #001b42;
+  padding-top: 6px;
+  padding-bottom:6px;
+  width: auto;
+  text-decoration: none;
+  color: white;
 }

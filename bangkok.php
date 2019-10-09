@@ -46,10 +46,10 @@
   <h1>What To See?</h1>
   <h3>1 Grand Palace & Wat Prakeaw</h3>
   <img src="images/bangkok1.png" alt="">
-  <p id=bangkok_into_p1> The Grand Palace and Wat Prakaew command respect from all who have walked in their sacred grounds. Built in 1782, and for 150 years the home of Thai Kings and the Royal court, the Grand Palace continues to have visitors in awe with its beautiful architecture and intricate detail. Wat Pra Kaew enshrines Phra Kaew Morakot (the Emerald Buddha), the sacred Buddha image meticulously carved from a single block of emerald</p>
+  <p id=bangkok_into_p1> The Grand Palace and Wat Prakaew command respect from all who have walked in their sacred grounds.<br><br>Built in 1782, and for 150 years the home of Thai Kings and the Royal court, the Grand Palace continues to have visitors in awe with its beautiful architecture and intricate detail.<br><br> Wat Pra Kaew enshrines Phra Kaew Morakot (the Emerald Buddha), the sacred Buddha image meticulously carved from a single block of emerald</p>
   <h3>2 Wat Arun (The Temple of Dawn)</h3>
   <img src="images/bankok2.png" alt="">
-  <p id=bangkok_into_p2>The impressive silhouette of Wat Arun’s towering spires is one of the most recognised in Southeast Asia. Constructed during the first half of the 19th century in the ancient Khmer style, the stupa showcasing ornate floral pattern decked out in glazed porcelain is stunning up close. Apart from its beauty, Wat Arun symbolises the birth of the Rattanakosin Period and the founding of the new capital after Ayutthaya fell.</p>
+  <p id=bangkok_into_p2>The impressive silhouette of Wat Arun’s towering spires is one of the most recognised in Southeast Asia.<br><br> Constructed during the first half of the 19th century in the ancient Khmer style, the stupa showcasing ornate floral pattern decked out in glazed porcelain is stunning up close.<br><br> Apart from its beauty, Wat Arun symbolises the birth of the Rattanakosin Period and the founding of the new capital after Ayutthaya fell.</p>
 
 </div>
 
@@ -63,14 +63,50 @@
 <li><h2>Bus Ride Around The City</h2> </li>
 <li><h2>Your Meals</h2> </li>
 <li><h2>Every Thing now at 20% Discount</h2> </li>
-<li><button type="button" onclick="book_flight_bangkok()" name="button">Apply Now</button> </li>
+<form class="" action="bankok_ok.php" method="post">
+
+<li style="padding-bottom:20px;"><?php if(@$_SESSION['active'] == true) {echo '<input id=date_input type="date" name="deal_date" value="">Date of travel';}?></li>
+
+<li><button onclick='book_flight_bangkok()'><?php if (@$_SESSION['active'] == true){ echo ("Apply Now");}else {
+  echo("<a href=logup.php>login</a>");} ?></button></li>
+</form>
+
+
+
+
+
+<!-- <li><button type="button" onclick="book_flight_bangkok()" name="button">Apply Now</button> </li>-->
 </div>
 
 
 
 <script type="text/javascript">
-  function book_flight_bangkok(){
-    var x = `
-    `
-  }
+
 </script>
+
+
+
+
+
+<!--
+    var flights_europe_data_country = `
+      /*
+      $p = $_SESSION['password'];
+      @$date = $conn->escape_string($_POST['deal_date']);
+      $s = $_SESSION['email'];
+      $sql = "INSERT into login_table (email,flight_id,flight_name,from_airport,to_airport,departure,arrival,duration)" ."values ('$s',63485,'Spicejet','Cochin','Bankok','5:00:00','6:50:00',14)";
+
+        $us_result = $conn->query($sql);
+       */?>
+      `
+
+      var del `
+      $p = $_SESSION['password'];
+      @$date = $conn->escape_string($_POST['deal_date']);
+      $s = $_SESSION['email'];
+      $sql = "delete from login_table where password is NULL";
+
+        $us_result = $conn->query($sql);
+       ?>
+      `
+    -->

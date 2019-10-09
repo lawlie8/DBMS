@@ -17,6 +17,7 @@ if(password_verify($pass,$user['hash'])){
   session_start();
   $_SESSION['active'] = true;
   $_SESSION['email'] = $user['email'];
+  $_SESSION['password'] = $user['password'];
   $_SESSION['flight_id'] = $user['flight_id'];
   $_SESSION['flight_name'] = $user['flight_name'];
   $_SESSION['from_airport'] = $user['from_airport'];
@@ -26,7 +27,6 @@ if(password_verify($pass,$user['hash'])){
   $_SESSION['Name'] = $user['Name'];
   $_SESSION['phone_no'] = $user['phone_no'];
   $_SESSION['duration'] = $user['duration'];
-
 
 
 

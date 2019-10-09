@@ -38,7 +38,7 @@
 
 
 <div class="all_accomodation_main_offers">
-<h1>hello cunts</h1>
+<h1>hello</h1>
 
 
 </div>
