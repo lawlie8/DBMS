@@ -105,7 +105,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -128,7 +128,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -151,7 +151,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -174,7 +174,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -197,7 +197,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -220,7 +220,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -243,7 +243,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -267,7 +267,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -290,7 +290,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -313,7 +313,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -336,7 +336,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -359,7 +359,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -382,7 +382,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -405,7 +405,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -428,7 +428,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -452,7 +452,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -475,7 +475,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -498,7 +498,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -521,7 +521,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -544,7 +544,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -567,7 +567,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -590,7 +590,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -613,7 +613,7 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -634,7 +634,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -656,7 +656,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -677,7 +677,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -698,7 +698,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -721,7 +721,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -743,7 +743,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -766,7 +766,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -789,7 +789,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -812,7 +812,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -835,7 +835,7 @@ while($us_array = $us_result->fetch_assoc()){
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
 }
 
 
@@ -858,7 +858,7 @@ echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -885,7 +885,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -907,7 +907,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -932,7 +932,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -954,7 +954,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-    echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+    echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
     }
 
 
@@ -980,7 +980,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
   $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
-  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+  echo '<li><table><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'] .'hrs</td> <td>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
   }
 
 
@@ -1006,7 +1006,7 @@ $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
   $hotelfunction = $us_array['flight_id'];
   $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
-    echo '<li><table><td id=flight_id'.$just.'> '.$us_array['flight_id'].'</td><td id=flight_name'.$just.'>'.$us_array['flight_name']. '</td><td id=flight_from_airport'.$just.'>'.$us_array['from_airport'] .'</td><td id=flight_to_airport'.$just.'>'.$us_array['to_airport'].'</td><td id=flight_departure'.$just.'>'.$us_array['departure'].'</td><td id=flight_arrival'.$just.'>'.$us_array['arrival'].'</td><td id=flight_duration'.$just.'>'.$us_array['duration'] .'hrs</td> <td id=flight_seats'.$just.'>'.$us_array['seats'] .'</td><td><a href=bookflight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
+    echo '<li><table><td id=flight_id'.$just.'> '.$us_array['flight_id'].'</td><td id=flight_name'.$just.'>'.$us_array['flight_name']. '</td><td id=flight_from_airport'.$just.'>'.$us_array['from_airport'] .'</td><td id=flight_to_airport'.$just.'>'.$us_array['to_airport'].'</td><td id=flight_departure'.$just.'>'.$us_array['departure'].'</td><td id=flight_arrival'.$just.'>'.$us_array['arrival'].'</td><td id=flight_duration'.$just.'>'.$us_array['duration'] .'hrs</td> <td id=flight_seats'.$just.'>'.$us_array['seats'] .'</td><td><a href=transaction/payment_of_flight'.$hotelfunction.'.php> <button>Book</button></a></td></tr></table></li>';
     }
 
 

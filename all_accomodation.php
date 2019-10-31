@@ -34,11 +34,13 @@
 </div>
 
 </div>
+</html>
 <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
 <div class="all_accomodation_main_offers">
-<h1>hello</h1>
-
+<h1>All Accomodations</h1>
+<h2>We Cover Everything? Whats Your Job Then?</h2>
+<h2>Just Relax And Enjoy</h2>
 
 </div>

@@ -48,6 +48,7 @@
   <li onclick=show_user_profile()>User Profile</li>
   <li onclick=show_user_bookings()>My Flights</li>
   <li onclick="show_user_deal_bookings()">My Bookings</li>
+  <li ondblclick="show_user_car_rentals()">Car Rentals</li>
   <li onclick="logout()">Log Out</li>
 </div>
 
@@ -86,10 +87,10 @@ function show_user_profile(){
         $us_result = $conn->query($sql);
         echo '<li><table><tr><td>Flight id</td><td>Flight Name</td><td>To</td><td>From</td><td>Departure</td><td>Arrival</td><td>Duration</td><td>Date</td><tr></table></li> ';
     while($us_array = $us_result->fetch_assoc()){
-      $hotelfunction = $us_array['to_airport'];
+      $hotelfunction = $us_array['flight_id'];
       $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
 
-    echo '<li><table><tr><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'].'</td><td>'.$us_array['date'].'</td><td><button onclick=flight_cancel'.$hotelfunction.'()>Cancel</button></tr></li>';
+    echo '<li><table><tr><td>'.$us_array['flight_id'].'</td><td>'.$us_array['flight_name']. '</td><td>'.$us_array['from_airport'] .'</td><td>'.$us_array['to_airport'].'</td><td>'.$us_array['departure'].'</td><td>'.$us_array['arrival'].'</td><td>'.$us_array['duration'].'</td><td>'.$us_array['date'].'</td><td><a href=cancel/cancel_flight'.$hotelfunction.'.php>Cancel</a></tr></li>';
     }
 
 
@@ -105,14 +106,14 @@ function show_user_deal_bookings(){
     <?php
     $just = 0;
     $s = $_SESSION['email'];
-    $sql = "select to_airport,hotel,room_no,date from login_table where email='$s' and password is  NULL";
+    $sql = "select to_airport,hotel,room_no,date from login_table where email='$s' and hotel is not NULL";
       $us_result = $conn->query($sql);
       echo '<li><table><tr><td>To</td><td>Hotel Name</td><td>Room no</td><td>Date</td><tr></table></li> ';
   while($us_array = $us_result->fetch_assoc()){
     $just = $just +1;
     $hotelfunction = $us_array['hotel'];
     $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
-  echo '<li><table><tr><td>'.$us_array['to_airport'].'</td><td id=td'.$just.' >'.$us_array['hotel'] .'</td><td>'.$us_array['room_no'].'</td><td>'.$us_array['date'].'</td><td><button onclick=cancel_booking'.$hotelfunction.'()>Cancel</button></tr></li>';
+  echo '<li><table><tr><td>'.$us_array['to_airport'].'</td><td id=td'.$just.' >'.$us_array['hotel'] .'</td><td>'.$us_array['room_no'].'</td><td>'.$us_array['date'].'</td><td><a href=cancel_booking'.$hotelfunction.'.php>Cancel</a></tr></li>';
   }
 
 
@@ -123,6 +124,31 @@ function show_user_deal_bookings(){
     `
     document.getElementById('fl').innerHTML = flights_europe_data_country;
   }
+/*
+  function show_user_car_rentals(){
+    var flights_europe_data_country = `
+      <?php
+      $just = 0;
+      $s = $_SESSION['email'];
+      $sql = "select img,car_model,pickup_location,price_per_day from car_rentals where email='$s'";
+        $us_result = $conn->query($sql);
+        echo '<li><table><tr><td>Car</td><td>Model Name</td><td>Location</td><td>Rate</td><tr></table></li> ';
+    while($us_array = $us_result->fetch_assoc()){
+      $just = $just +1;
+      $hotelfunction = $us_array['car_model'];
+      $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+    echo '<li><table><tr><td>'.$us_array['img'].'</td><td id=td'.$just.' >'.$us_array['car_model'] .'</td><td>'.$us_array['pickup_location'].'</td><td>'.$us_array['price_per_day'].'</td><td><a href=cancel_booking'.$hotelfunction.'.php>Cancel</a></tr></li>';
+    }
+
+
+
+       ?>
+
+
+      `
+      document.getElementById('fl').innerHTML = flights_europe_data_country;
+    }
+*/
 
 
 function logout() {
@@ -273,16 +299,17 @@ function cancel_bookingKnickerBockerHotel(){
       $just = 0;
       $s = $_SESSION['email'];
       $sql = "delete from login_table where email='$s' and hotel='Equinox Hotel'";
-      echo $sql;
+
         $us_result = $conn->query($sql);
-        $us_array = $us_result->fetch_assoc();
+
        ?>
     `
     document.getElementById("fl").innerHTML = x
-    window.location.reload()
+
 
 
 }
+
 
 
 
