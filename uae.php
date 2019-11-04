@@ -35,23 +35,23 @@
 
 
 <div class="bangkok_first_1">
- <li><h1>London</h1></li>
+ <li><h1>UAE</h1></li>
 <li><h2>With 2 days and 1 nights </h2></li>
-<img src="images/london0.png" alt="">
+<img src="images/uae0.png" alt="">
 </div>
 
 
 <div class="bangkok_into1">
-  <p>London is the capital and largest city of England and the United Kingdom. Standing on the River Thames in the south-east of England, at the head of its 50 mi estuary leading to the North Sea, London has been a major settlement for two millennia. Londinium was founded by the Romans.</p>
+  <p>The United Arab Emirates, sometimes simply called the Emirates, is a country in Western Asia at the southeast end of the Arabian Peninsula on the Persian Gulf, bordering Oman to the east and Saudi Arabia to the south and west, as well as sharing maritime borders with Qatar to the west and Iran to the north</p>
   <h1>What To See?</h1>
-  <h3>1 Tower of Lindon</h3>
-  <img src="images/london1.png" alt="">
+  <h3>1 Burj Khalifa</h3>
+  <img src="images/uae1.png" alt="">
   <p id=bangkok_into_p1>
-One of London's most famous landmarks, the historic Tower houses the Crown Jewels, the prison cell of Sir Walter Raleigh, known as the Bloody Tower, and the Chapel of St. John and the Royal Armories.</p>
+Described as both a ‘Vertical City’ and ‘A Living Wonder,’ Burj Khalifa, developed by Dubai-based Emaar Properties PJSC, is the world’s tallest building. Rising gracefully from the desert, Burj Khalifa honours the city with its extraordinary union of art, engineering and meticulous craftsmanship. At 828 metres (2,716.5 ft), the 200 plus storey Burj Khalifa has 160 habitable levels, the most of any building in the world. The tower was inaugurated on January 4, 2010, and is responsible for a number of world-firsts. The tower became the world’s tallest man-made structure just 1,325 days after excavation work started in January 2004. Burj Khalifa utilised a record-breaking 330,000 cubic metres of concrete; 39,000 tonnes of steel reinforcement; 103,000 square metres of glass; and 15,500 square metres of embossed stainless steel. The tower took 22 million man hours to build.</p>
   <h3>2 Churchill War Rooms</h3>
-  <img src="images/london3.png" alt="">
+  <img src="images/uae2.png" alt="">
   <p id=bangkok_into_p2>
-Discover the secrets of the Second World War in the underground nerve centre where Churchill and his war cabinet lived and worked.</p>
+The Emirates Palace is a luxury hotel in Abu Dhabi, United Arab Emirates operated by Kempinski and opened in February </p>
 
 </div>
 
@@ -66,22 +66,22 @@ Discover the secrets of the Second World War in the underground nerve centre whe
 <li><h2>Your Meals</h2> </li>
 <li><h2>Every Thing now at 30% Discount</h2> </li>
 <br><br>
-<li>1:Britannia International Hotel Canary Wharf  122,000Rs</li>
+<li>1:Park Regis  166,000Rs</li>
 <br>
-<li><img height="300px" width="480px" src="images/hotel_london1.png" alt=""> </li>
+<li><img height="300px" width="480px" src="images/hotel_uae1.png" alt=""> </li>
 <br><br>
-<form class="" action="london1_ok.php" method="post">
+<form class="" action="uae1_ok.php" method="post">
   <li style="padding-bottom:20px;"><?php if(@$_SESSION['active'] == true) {echo '<input id=date_input type="date" name="deal_date" value="">Date of travel';}?></li>
 
 <li><button onclick='book_flight_bangkok()'><?php if (@$_SESSION['active'] == true){ echo ("Apply Now");}else {
   echo("<a href=logup.php>login</a>");} ?></button></li>
 </form>
 <br><br><br><br>
-<li>2: Central Parl, Hotel  105,000Rs</li>
+<li>2: Atana Hotel  130,000Rs</li>
 <br>
-<li><img height="300px" width="480px" src="images/hotel_london2.png" alt=""> </li>
+<li><img height="300px" width="480px" src="images/hotel_uae2.png" alt=""> </li>
 <br><br>
-<form class="" action="london2_ok.php" method="post">
+<form class="" action="uae2_ok.php" method="post">
   <li style="padding-bottom:20px;"><?php if(@$_SESSION['active'] == true) {echo '<input id=date_input type="date" name="deal_date" value="">Date of travel';}?></li>
 
 <li><button onclick='book_flight_bangkok()'><?php if (@$_SESSION['active'] == true){ echo ("Apply Now");}else {

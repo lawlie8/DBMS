@@ -11,7 +11,7 @@ if (strtotime($date) > $now) {
 
     $us_result = $conn->query($sql);
     echo "<script>alert('Ticket Booked Please head For Payment')</script>";
-
+    header('location: user.php');
 } else {
   echo "<script>alert('Date Invalid');history.go(-1);</script>";
 
