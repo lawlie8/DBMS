@@ -12,12 +12,13 @@
             <form method=post action=payment_of_flight18080.php>
             <table>
             <tr>
+            <h3>Enter Credit Card Info</h3>
             <td>Credit Card no: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
             <td> <input type="text" name="credit_card_no_input" value=""></td>
             </tr>
             <tr>
               <td></td>
-              <td><button type="button" name="button"> <?php $payrs = rand(85000,90000); echo "pay $payrs";?></button></td>
+              <td><button type="button" name="button"> <?php $payrs = rand(85000,90000); echo "pay Rs. $payrs";?></button></td>
             </tr>
             </table>
             </form>

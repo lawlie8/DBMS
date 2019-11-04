@@ -48,7 +48,7 @@
   <li onclick=show_user_profile()>User Profile</li>
   <li onclick=show_user_bookings()>My Flights</li>
   <li onclick="show_user_deal_bookings()">My Bookings</li>
-  <li ondblclick="show_user_car_rentals()">Car Rentals</li>
+  <li onclick="show_user_car_rentals()">Car Rentals</li>
   <li onclick="logout()">Log Out</li>
 </div>
 
@@ -124,23 +124,26 @@ function show_user_deal_bookings(){
     `
     document.getElementById('fl').innerHTML = flights_europe_data_country;
   }
-/*
+
   function show_user_car_rentals(){
     var flights_europe_data_country = `
       <?php
-      $just = 0;
+      require 'init.php'; require 'signin.php';
       $s = $_SESSION['email'];
-      $sql = "select img,car_model,pickup_location,price_per_day from car_rentals where email='$s'";
-        $us_result = $conn->query($sql);
-        echo '<li><table><tr><td>Car</td><td>Model Name</td><td>Location</td><td>Rate</td><tr></table></li> ';
-    while($us_array = $us_result->fetch_assoc()){
-      $just = $just +1;
-      $hotelfunction = $us_array['car_model'];
-      $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
-    echo '<li><table><tr><td>'.$us_array['img'].'</td><td id=td'.$just.' >'.$us_array['car_model'] .'</td><td>'.$us_array['pickup_location'].'</td><td>'.$us_array['price_per_day'].'</td><td><a href=cancel_booking'.$hotelfunction.'.php>Cancel</a></tr></li>';
-    }
-
-
+      $just = 0;
+      $sql = "select * from car_rentals where email = '$s'";
+      $us_result = $conn->query($sql);
+      echo "<li><table><tr><td>Model</td><td>Pick up at</td><td>price per day</td><td>Milage</td><tr></table></li>";
+      while($us_array = $us_result->fetch_assoc()){
+          $just = $just + 1;
+          $hotelfunction = $us_array['car_id'];
+          $hotelfunction = preg_replace('/\s+/', '', $hotelfunction);
+          $model = $us_array['car_model'];
+          $pick = $us_array['pickup_location'];
+          $price = $us_array['price_per_day'];
+          $milage = $us_array['milage'];
+        echo "<table><tr><td width='200'>$model</td><td width=200px>$pick</td><td>$price</td><td>$milage</td><td><a href=cancel_car/cancel_$hotelfunction.php>Cancel</a></td></tr></table>";
+      }
 
        ?>
 
@@ -148,7 +151,7 @@ function show_user_deal_bookings(){
       `
       document.getElementById('fl').innerHTML = flights_europe_data_country;
     }
-*/
+
 
 
 function logout() {

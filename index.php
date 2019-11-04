@@ -67,9 +67,9 @@
 </div>
 
 <div class="main_deals3">
-<li><a href="#"><h1>UK</h1><p>3 Packages</p> <img src="images/UK.png" alt=""></a>  </li>
-<li><a href="#"><h1>UAE</h1><p>5 Packages</p> <img src="images/UAE.png" alt=""></a>  </li>
-<li><a href="#"> <h1>Australia</h1><p>2 Packages</p><img src="images/Australia.png" alt=""> </a></li>
+<li><a href="uk_london.php"><h1>UK</h1><p>3 Packages</p> <img src="images/UK.png" alt=""></a>  </li>
+<li><a href="uae.php"><h1>UAE</h1><p>5 Packages</p> <img src="images/UAE.png" alt=""></a>  </li>
+<li><a href="australia.php"> <h1>Australia</h1><p>2 Packages</p><img src="images/Australia.png" alt=""> </a></li>
 </div>
 <form class="" action="email_subscribe.php" method="post">
 

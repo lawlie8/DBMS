@@ -48,7 +48,7 @@
 <div class="car_rantal_container">
 <?php require 'init.php';
 
-$sql = 'select * from car_rentals';
+$sql = 'select * from car_rentals where email is  NULL';
 $us_result = $conn->query($sql);
 while($us_array = $us_result->fetch_assoc()){
     $img = $us_array['img'];
@@ -57,10 +57,11 @@ while($us_array = $us_result->fetch_assoc()){
     $price = $us_array['price_per_day'];
     $milage = $us_array['milage'];
     $policy = $us_array['fuel_policy'];
+    $car_id = $us_array['car_id'];
     $model = preg_replace('/\s+/', '', $model);
     $pick2 = preg_replace('/\s+/', '', $pick);
 
-  echo "<table><tr><td><img src = images/$img></td><td>Model : $model</td></tr><tr><td>Pick Up Location: $pick</td><td>Price Per Day : $price </td><td>Milage : $milage</td><td>Fuel Policy:  $policy</td><td></td><td><a href=car_rental/book_$model$pick2.php>Rent</a></td></tr></table>";
+  echo "<table><tr><td><img src = images/$img></td><td>Model : $model</td></tr><tr><td>Pick Up Location: $pick</td><td>Price Per Day : $price </td><td>Milage : $milage</td><td>Fuel Policy:  $policy</td><td></td><td><a href=car_rental/book_$car_id.php>Rent</a></td></tr></table>";
 }
 
  ?>

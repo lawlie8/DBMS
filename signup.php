@@ -7,11 +7,13 @@ $conn = new mysqli($server,$username,$password,$dbname);
 @$_SESSION['email'] = $_POST['signup_email_id'];
 @$email = $conn->escape_string($_POST['signup_email_id']);
 $passwrd = $conn->escape_string($_POST['signup_password']);
+$address = $conn->escape_string($_POST['signup_address']);
+
 $hash = $conn->escape_string(password_hash($_POST['signup_password'], PASSWORD_BCRYPT));
 $name_id = $conn->escape_string($_POST['name_id']);
 $phno = $conn->escape_string($_POST['phone_no']);
 $hash = password_hash($passwrd, PASSWORD_BCRYPT);
-$sql = "INSERT INTO login_table (email,password,hash,phone_no,Name)". "VALUES('$email', '$passwrd' ,'$hash','$phno','$name_id')";
+$sql = "INSERT INTO login_table (email,password,hash,phone_no,Name,address)". "VALUES('$email', '$passwrd' ,'$hash','$phno','$name_id','$address')";
 if ($conn->query($sql)) {
 
     header("location: logup.php");

@@ -51,6 +51,9 @@
   <tr>
     <td class="tdspan"><span>Password*</span></td><td><input id='input2' type="password" autocomplete='off' required name="signup_password" value=""  placeholder="  Password"></td>
   </tr>
+  <tr>
+    <td class="tdspan"><span>Address*</span></td><td><input id='input2' type="text" autocomplete='off' required name="signup_address" value=""  placeholder="  Address"></td>
+  </tr>
 </table>
 
 <div class="signupbutton">
