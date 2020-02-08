@@ -317,7 +317,7 @@ div.email_subscribe{
   top: 1500px;
   padding-left: 270px;
   padding-right:140px;
-  width: 1074px;
+  width: 100%;
   background-color:#001b42;
   color: white;
 }
